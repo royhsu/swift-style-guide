@@ -8,19 +8,19 @@ Prefer
 
 ```swift
 
-    if
-        let name = json?["name"] as? String,
-        let age = json?["age"] as? Int {
+if
+    let name = json?["name"] as? String,
+    let age = json?["age"] as? Int {
 
-    }
-    else if
-        let firstName = json?["firstName"] as? String,
-        let lastName = json?["lastName"] as? String {
+}
+else if
+    let firstName = json?["firstName"] as? String,
+    let lastName = json?["lastName"] as? String {
 
-    }
-    else {
+}
+else {
 
-    }
+}
 
 ```
 
