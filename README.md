@@ -54,7 +54,7 @@ class Foo { ... }
 
 ```
 
-#### Always mark access control explicitly
+#### Always mark access control explicitly at the front most
 
 Prefer
 
@@ -62,7 +62,7 @@ Prefer
 
 internal var bar: Bar
 
-internal var foo() { ... }
+internal override func foo() { ... }
 
 ```
 
@@ -72,7 +72,7 @@ Rather than
 
 var bar: Bar
 
-var foo() { ... }
+override internal foo() { ... }
 
 ```
 
