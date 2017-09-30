@@ -2,11 +2,29 @@
 
 The coding style guide for Swift
 
+#### Mark class as final by default
+
+Prefer
+
+```swift
+
+public final class Foo { ... }
+
+```
+
+Rather than
+
+```swift
+
+final class Foo { ... }
+
+```
+
 #### Always mark access control explicitly
 
 Prefer
 
-```
+```swift
 
 internal var bar: Bar
 
@@ -14,9 +32,9 @@ internal var foo() { ... }
 
 ```
 
-More than
+Rather than
 
-```
+```swift
 
 var bar: Bar
 
