@@ -2,6 +2,24 @@
 
 The coding style guide for Swift
 
+#### Use immutable by default
+
+Prefer
+
+```swift
+
+let bar = 1
+
+```
+
+Rather than
+
+```swift
+
+var foo = 1
+
+```
+
 #### Mark class as final by default
 
 Prefer
