@@ -36,24 +36,6 @@ class Foo { ... }
 
 ```
 
-#### Mark class as final by default
-
-Prefer
-
-```swift
-
-final class Foo { ... }
-
-```
-
-Rather than
-
-```swift
-
-class Foo { ... }
-
-```
-
 #### Always mark access control explicitly at the front most
 
 Prefer
@@ -73,6 +55,28 @@ Rather than
 var bar: Bar
 
 override internal foo() { ... }
+
+```
+
+#### Mark class as final by default and followed right by access control
+
+Prefer
+
+```swift
+
+final class Foo { ... }
+
+public final func bar() { ... }
+
+```
+
+Rather than
+
+```swift
+
+class Foo { ... }
+
+final public func bar() { ... }
 
 ```
 
