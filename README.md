@@ -4,7 +4,7 @@ The coding style guide for Swift
 
 #### Use immutable by default
 
-Prefer
+Prefer `let`
 
 ```swift
 
@@ -20,13 +20,11 @@ var foo = 1
 
 ```
 
-#### Mark class as final by default
-
-Prefer
+Prefer `struct`
 
 ```swift
 
-public final class Foo { ... }
+struct Foo { ... }
 
 ```
 
@@ -34,7 +32,25 @@ Rather than
 
 ```swift
 
+class Foo { ... }
+
+```
+
+#### Mark class as final by default
+
+Prefer
+
+```swift
+
 final class Foo { ... }
+
+```
+
+Rather than
+
+```swift
+
+class Foo { ... }
 
 ```
 
