@@ -2,6 +2,28 @@
 
 The coding style guide for Swift
 
+#### Always mark access control explicitly
+
+Prefer
+
+```
+
+internal var bar: Bar
+
+internal var foo() { ... }
+
+```
+
+More than
+
+```
+
+var bar: Bar
+
+var foo() { ... }
+
+```
+
 #### Using `if else`
 
 Prefer
