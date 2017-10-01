@@ -76,7 +76,7 @@ override internal foo() { ... }
 
 ```
 
-#### Mark class as final by default and followed right by access control
+#### Mark class as final by default and followed right after access control
 
 Prefer
 
