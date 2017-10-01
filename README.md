@@ -2,6 +2,24 @@
 
 The coding style guide for Swift
 
+#### Always add decimal point for a double number
+
+Prefer
+
+```swift
+
+let price = 12.0
+
+```
+
+Rather than
+
+```swift
+
+let price = 12
+
+```
+
 #### Use immutable by default
 
 Prefer `let`
@@ -114,6 +132,15 @@ guard
 else { return }
 
 ```
+
+#### DO NOT use abbreviation for naming everything except for some acceptable cases
+
+**Acceptable common abbreviation**
+
+| Origin | Abbreviation  |
+| - | - |
+| arguments | args |
+| information  | info |
 
 # References
 
