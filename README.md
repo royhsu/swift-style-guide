@@ -133,6 +133,56 @@ else { return }
 
 ```
 
+#### Avoid default case while switching
+
+Given an enum
+
+```swift
+
+enum Priority {
+
+  case high, medium, low
+
+}
+
+```
+
+Prefer
+
+```swift
+
+switch priority {
+
+case .high, .medium:
+
+  ...
+
+case .low:
+
+  ...
+
+}
+
+```
+
+Rather than
+
+```swift
+
+switch priority {
+
+case .high, .medium:
+
+  ...
+
+default:
+
+  ...
+
+}
+
+```
+
 #### DO NOT use abbreviation for naming everything except for some acceptable cases
 
 **Acceptable common abbreviation**
