@@ -204,3 +204,4 @@ default:
 # References
 
 * [GitHub - Swift Style Guide](https://github.com/github/swift-style-guide)
+* [Increasing Performance by Reducing Dynamic Dispatch](https://developer.apple.com/swift/blog/?id=27)
