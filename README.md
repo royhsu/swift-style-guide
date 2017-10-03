@@ -2,6 +2,15 @@
 
 The coding style guide for Swift
 
+### Naming convention
+
+| Type | Name |
+| - | - |
+| ID | id |
+| ProductID | productId|
+| URL | url |
+| ImageURL | imageUrl |
+
 #### Always add decimal point for a double number
 
 Prefer
