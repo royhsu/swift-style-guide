@@ -200,6 +200,8 @@ default:
 | - | - |
 | arguments | args |
 | information  | info |
+| maximum | max |
+| minimum | min |
 
 # References
 
