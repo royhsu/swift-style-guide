@@ -11,6 +11,48 @@ The coding style guide for Swift
 | URL | url |
 | ImageURL | imageUrl |
 
+### Function
+
+Prefer
+
+```swift
+
+// One input and one output.
+func foo(var1: String) -> Double { ... }
+
+// One input and multiple outputs.
+func foo(var1: String)
+throws -> (Double)
+-> Int { ... }
+
+// More than one input.
+func foo(
+  var1: String,
+  var2: Int
+)
+-> Double { ... }
+
+func foo(
+  var1: String,
+  var2: Int
+)
+-> (Double)
+throws -> Int { ... }
+
+```
+
+Rather than
+
+```swift
+
+func foo(var1: String) throws -> (Double) -> Int { ... }
+
+func foo(var1: String, var2: Int) -> Double { ... }
+
+func foo(var1: String, var2: Int) throws -> (Double) -> Int { ... }
+
+```
+
 #### Always add decimal point for a double number
 
 Prefer
