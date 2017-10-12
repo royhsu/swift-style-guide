@@ -240,7 +240,9 @@ default:
 
 | Origin | Abbreviation  |
 | - | - |
+| character | char |
 | arguments | args |
+| properties | props |
 | information  | info |
 | maximum | max |
 | minimum | min |
