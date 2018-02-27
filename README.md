@@ -16,13 +16,13 @@ The coding style guide for Swift
 Prefer
 
 ```swift
-// Spacing here
+// Spacing here.
 var foo = true
-// Spacing here
+// Spacing here.
 bar.doSomething()
-// Spacing here
+// Spacing here.
 foo = false
-// Spacing here
+// Spacing here.
 ```
 
 Rather than
@@ -56,7 +56,7 @@ func foo(
 )
 -> Double { ... }
 
-// Multiple inputs and outputs
+// Multiple inputs and outputs.
 func foo(
   var1: String,
   var2: Int
@@ -84,9 +84,23 @@ Prefer
 
 ```swift
 
+// If must has a value.
 guard
     let value = optional
-else { fatalError("Reason here.") }
+else { fatalError("Explainable reason here.") }
+
+// If could have a value.
+guard
+    let value = optional
+else {
+
+    // custom error handling here.
+    // For example:
+    // throw error
+
+    return
+
+}
 
 ```
 
