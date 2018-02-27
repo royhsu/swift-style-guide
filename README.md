@@ -290,6 +290,7 @@ default:
 | information  | info |
 | maximum | max |
 | minimum | min |
+| application | app |
 
 # References
 
