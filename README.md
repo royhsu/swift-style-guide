@@ -2,7 +2,7 @@
 
 The coding style guide for Swift
 
-### Naming convention
+### Naming convention (Camel Case)
 
 | Type | Name |
 | - | - |
@@ -171,6 +171,25 @@ Rather than
 class Foo { ... }
 
 final public func bar() { ... }
+
+```
+
+#### Always put prefixes above the content
+
+Prefer
+
+```swift
+
+@objc @discardableResult
+func doSomething() -> Int { ... }
+
+```
+
+Rather than
+
+```swift
+
+@objc @discardableResult func doSomething() -> Int { ... }
 
 ```
 
