@@ -7,9 +7,33 @@ The coding style guide for Swift
 | Type | Name |
 | - | - |
 | ID | id |
-| ProductID | productId|
+| ProductID | productID |
 | URL | url |
-| ImageURL | imageUrl |
+| ImageURL | imageURL |
+
+### Spacing between lines
+
+Prefer
+
+```swift
+// Spacing here
+var foo = true
+// Spacing here
+bar.doSomething()
+// Spacing here
+foo = false
+// Spacing here
+```
+
+Rather than
+
+```swift
+
+var foo = true
+bar.doSomething()
+foo = false
+
+```
 
 ### Function
 
