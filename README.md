@@ -56,6 +56,7 @@ func foo(
 )
 -> Double { ... }
 
+// Multiple inputs and outputs
 func foo(
   var1: String,
   var2: Int
