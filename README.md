@@ -78,6 +78,26 @@ func foo(var1: String, var2: Int) throws -> (Double) -> Int { ... }
 
 ```
 
+#### Optional value handling
+
+Prefer
+
+```swift
+
+guard
+    let value = optional
+else { fatalError("Reason here.") }
+
+```
+
+Rather than
+
+```swift
+
+let value = optional!
+
+```
+
 #### Always add decimal point for a double number
 
 Prefer
